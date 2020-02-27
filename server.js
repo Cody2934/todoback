@@ -54,7 +54,7 @@ app.use('/api', ensureAuth);
 
 // *** TODOS ***
 // this is /GET request that returns whole list of todos
-app.get('/api/todos', async (req, res) => {
+app.get('/api/todos', async(req, res) => {
 
     console.log(req.userId);
     try {
@@ -77,7 +77,7 @@ app.get('/api/todos', async (req, res) => {
 });
 
 // this endpoint creates a new todo
-app.post('/api/todos', async (req, res) => {
+app.post('/api/todos', async(req, res) => {
     try {
         // the user input lives is req.body.task
 
@@ -103,7 +103,7 @@ app.post('/api/todos', async (req, res) => {
 });
 
 // this route has a body with a complete property and an id in the params
-app.put('/api/todos/:id', async (req, res) => {
+app.put('/api/todos/:id', async(req, res) => {
     try {
         const result = await client.query(`
         update todos
@@ -122,7 +122,7 @@ app.put('/api/todos/:id', async (req, res) => {
     }
 });
 
-app.delete('/api/todos/:id', async (req, res) => {
+app.delete('/api/todos/:id', async(req, res) => {
     // get the id that was passed in the route:
 
     try {
