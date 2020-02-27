@@ -27,7 +27,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
-    "pg": "^7.12.1"
+    "pg": "^7.12.1",
+    "superagent": "^5.2.2"
   },
   "bugs": {
     "url": "https://github.com/Cody2934/todoback/issues"
